@@ -1,18 +1,17 @@
-let yearChoice = document.querySelector("#year-choice");
 let dateFormat = new Intl.DateTimeFormat("fa");
+let yearChoice = document.querySelector("#year-choice");
 let submit = document.querySelector("#sub");
-let value1 = document.querySelectorAll(".car");
 
 
-submit.addEventListener("click" , function(){
-    
-} )
 
+function opt(){    
+    let selectedCar = document.querySelector("#car-choice").value; 
+    let selectedYear = document.querySelector("#year-selction").value;
+    let selectedIncurance = document.querySelector("#normal-insurance");
+    let selectedIncurance1 = document.querySelector("#complete-insurance");
 
-let validateValue = function(){
-
+    console.log(selectedCar + "" + selectedYear + "" + selectedIncurance + "" + selectedIncurance1);
 }
-
 // creat a cunstructor
 function YearCuns (Year){
     this.Year = dateFormat.format(Date.now()).slice(0,4);   
