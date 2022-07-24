@@ -8,21 +8,31 @@
     background-color: bisque;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start
 }
 
 .input-car-year{
 
     display: flex;
+    justify-content: right;
+
 }
 
-.input-car-year input{
+.input-car-year  input{
     width: 10% ;
     border-radius: 10%;
     border-bottom: burlywood;
+    outline: none;
+}
+
+#sub{
+    width: 50%;
 }
 
 .insuranceKind{
-    display: inline-flex;
+    display: flex;
+    float: unset;
 }
 
 *{
