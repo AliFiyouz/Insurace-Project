@@ -9,20 +9,32 @@
 </head>
 <body>
     <div class="container">
+        <label for="">محاسبه انلاین قیمت بیمه خودرو</label>
         <div class="form">
-            <label for="car-choise">مدل خودرو:</label>
-            <input list="car-" id="car-choise"/>
-            <datalist id="car-">
-                <option value="پراید">
-                <option value="206">
-                <option value="405">
-                <option value="2008">
-                <option value="BMW 720 LI">
-            </datalist>
-            <label for="year-selction">:سال ساخت</label>
-            <input list="year-choice" id="year-selction"/>
-            <datalist id="year-choice"></datalist>
-            <p id="demo"></p>
+            <div class="input-car-year">
+                <label for="car-choise">مدل خودرو:</label>
+                <input list="car-" id="car-choise"/>
+                <datalist id="car-">
+                    <option value="پراید">
+                    <option value="206">
+                    <option value="405">
+                    <option value="2008">
+                    <option value="BMW 720 LI">
+                </datalist>
+                <label for="year-selction">سال ساخت:</label>
+                <input list="year-choice" id="year-selction"/>
+                <datalist id="year-choice"></datalist>
+            </div>
+            <div class="insuranceKind">
+                <input type="radio" name="" id="normal-insurance">ساده - شخص ثالث
+                <input type="radio" name="" id="complete-insurance">کامل - شخص ثالث با بیمه بدنه
+            </div>
+            <div class="result">
+                <span id="car-model"></span>
+                <span id="year-made"></span>
+                <span id="insurance-model"></span>
+                <span id="final-price"></span>
+            </div>
 
     <script src="app.js"></script>
 </body>

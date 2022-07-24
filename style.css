@@ -2,6 +2,29 @@
     background-color: aliceblue;
 }
 
+
+
 .form{
     background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-car-year{
+
+    display: flex;
+}
+
+.input-car-year input{
+    width: 10% ;
+    border-radius: 10%;
+    border-bottom: burlywood;
+}
+
+.insuranceKind{
+    display: inline-flex;
+}
+
+*{
+    direction: rtl;
 }
