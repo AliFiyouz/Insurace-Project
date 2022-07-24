@@ -1,5 +1,17 @@
 let yearChoice = document.querySelector("#year-choice");
 let dateFormat = new Intl.DateTimeFormat("fa");
+let submit = document.querySelector("#sub");
+let value1 = document.querySelectorAll(".car");
+
+
+submit.addEventListener("click" , function(){
+    
+} )
+
+
+let validateValue = function(){
+
+}
 
 // creat a cunstructor
 function YearCuns (Year){
