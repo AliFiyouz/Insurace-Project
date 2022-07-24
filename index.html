@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="container">
-        <label for="">محاسبه انلاین قیمت بیمه خودرو</label>
+        <label for=""><h2 data-text="h2" >محاسبه انلاین بیمه خودرو</h2></label>
         <div class="form">
-            <div class="input-car-year">
+            <form id="form" action="">
                 <label for="car-choise">مدل خودرو:</label>
-                <input list="car-" id="car-choise"/>
+                <input list="car-" name="carrr" id="car-choise"/>
                 <datalist id="car-">
                     <option class="car" value="پراید">
                     <option class="car" value="206">
@@ -26,16 +26,16 @@
                 <datalist id="year-choice"></datalist>
             </div>
             <div class="insuranceKind">
-                <input type="radio" name="" id="normal-insurance">ساده - شخص ثالث
-                <input type="radio" name="" id="complete-insurance">کامل - شخص ثالث با بیمه بدنه
+                ساده - شخص ثالث <input type="radio" name="" id="normal-insurance">
+                کامل - شخص ثالث با بیمه بدنه <input type="radio" name="" id="complete-insurance">
             </div>
             <div class="result">
+                <input id="sub" type="submit" value="محاسبه بیمه خودرو شما ">
                 <span id="car-model"></span>
                 <span id="year-made"></span>
                 <span id="insurance-model"></span>
                 <span id="final-price"></span>
-            </div>
-            <input id="sub" type="submit" value="">
+            </form>
 
     <script src="app.js"></script>
 </body>

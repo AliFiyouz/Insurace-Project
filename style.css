@@ -1,23 +1,74 @@
 .container{
-    background-color: aliceblue;
+    background-color: rgb(58, 61, 63);
+    background: none;
+}
+
+body{
+    /* background-image: url(images.jpg);
+    background-size: cover; */
+    background: linear-gradient( -45deg ,black , #f53d9c , #3D6EF5 , #ffffff );
+    background-size: 400% 400% ;
+    position: relative;
+    animation: change 5s infinite cubic-bezier(1, 0.165, 0.165, 1);
+}
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+h2{
+    font-size: 270%;
+    color: black ;
+    -webkit-text-stroke: 0.3vh;
+    text-transform: uppercase;
 }
 
 
-
-.form{
-    background-color: bisque;
+#form{
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start
+    align-items: center
+    
 }
+
+.result{
+    display: flex;
+    justify-content: center;
+}
+
+input[name="carrr"]{
+    border: 1px solid black ;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    border-radius: 9%;
+    
+}
+
+
 
 .input-car-year{
-
     display: flex;
     justify-content: right;
-
 }
+
+.insuranceKind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .input-car-year  input{
     width: 10% ;
@@ -27,7 +78,15 @@
 }
 
 #sub{
-    width: 50%;
+    color: #2f333d;
+    font-size: 14vh;
+    background-color: transparent ;
+    border: 1px solid #f53d9c;
+    box-shadow: 0px 1px #f53d9c;
+}
+
+#sub:hover{
+    box-shadow: 10px 10px #f53d9c5d ;
 }
 
 .insuranceKind{
@@ -37,4 +96,5 @@
 
 *{
     direction: rtl;
+    color: azure;
 }
