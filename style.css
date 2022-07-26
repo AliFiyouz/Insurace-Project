@@ -97,12 +97,13 @@ h2{
     color: #2f333d;
     font-size: 14vh;
     background-color: transparent ;
-    border: 1px solid #f53d9c;
-    box-shadow: 0px 1px #f53d9c;
+    border: 1px solid #f53d9c27;
+    box-shadow: 10px 10px 5px #f53d9c27,
+    0px 0px 10px #f53d9c27;
+    border-radius: 20px;
 }
 
 #sub:hover{
-    box-shadow: 10px 10px #f53d9c5d ;
 }
 
 .insuranceKind{
