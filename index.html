@@ -9,23 +9,23 @@
 </head>
 <body>
     <div class="container">
-        <label for=""><h2 data-text="h2" >محاسبه آنلاین بیمه خودرو</h2></label>
+        <div class="head"><h2 data-text="h2" >محاسبه آنلاین بیمه خودرو</h2></div>
         <div class="form">
-            <form id="form" action="">
-                <label >مدل خودرو:</label>
+            <form id="form">
+                <h2>مدل خودرو:</h2>
                 <select id="car-choice">
                     <option value="پراید">پراید</option>
                     <option value="405">405</option>
                     <option value="2008">2008</option>
                     <option value="BMW 720 LI">BMW 720 LI</option>
                 </select>
-                <label for="year-selction">سال ساخت:</label>
+                <h2>سال ساخت:</h2>
                 <select id="year-choice"></select>
-                <label for=""> ساده - شخص ثالث </label>
-                <input type="radio" id="normal-insurance">
-                <label for="">                کامل - شخص ثالث با بیمه بدنه </label>
-                <input type="radio" name="" id="complete-insurance">
-                <input id="sub" onclick="opt()" type="button" value="محاسبه بیمه خودرو شما ">
+                <h2> ساده - شخص ثالث </h2>
+                <input type="radio" name="kindInsurance" id="normal-insurance">
+                <h2>کامل - شخص ثالث با بیمه بدنه </h2>
+                <input type="radio" name="kindInsurance" id="complete-insurance">
+                <input id="sub" onclick="opt()" type="submit" value="محاسبه بیمه خودرو شما ">
             </form>
         </div>
             <div class="result">

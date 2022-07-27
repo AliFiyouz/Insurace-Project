@@ -1,27 +1,44 @@
-let dateFormat = new Intl.DateTimeFormat("fa");
-let yearChoice = document.querySelector("#year-choice");
-let submit = document.querySelector("#sub");
-
+const dateFormat = new Intl.DateTimeFormat("fa"),
+ yearChoice = document.querySelector("#year-choice"),
+ submit = document.querySelector("#sub"),
+ form = document.querySelector("#form");
 
 
 function opt(){    
-    let selectedCar = document.querySelector("#car-choice").value; 
-    let selectedYear = document.querySelector("#year-choice").value;
-    let selectedIncurance = document.querySelector("#normal-insurance");
-    let selectedIncurance1 = document.querySelector("#complete-insurance");
+    const selectedCar = document.querySelector("#car-choice").value, 
+     selectedYear = document.querySelector("#year-choice").value,
+     selectedIncurance = document.querySelector("#normal-insurance"),
+     selectedIncurance1 = document.querySelector("#complete-insurance");
     console.log(selectedCar + "" + selectedYear + "" + selectedIncurance + "" + selectedIncurance1);
 }
-// creat a cunstructor
+
+
+//___________________________________________________________________
+// event listener for when content load.
+document.addEventListener('DOMContentLoaded', yearMaker);
+
+// event listener for when submit form clicked.
+form.addEventListener("submit" , function (e) {
+// e.perventdefault for when submit clicked form reset.
+    e.preventDefault();
+// select value of all import value in our form. 
+    const year = document.querySelector("#year-choice").value,
+    car = document.querySelector("#car-choice").value,
+    insurance = document.querySelector('input[name="kindInsurance":cheked').value,
+    userInsurance = new InsuranceConstructor(car,year,insurance),
+    cost = userInsurance.calculateCost(userInsurance);
+    finalCase(userInsurance , cost);
+})
+
+// creat a cunstructor for creat a year option inside select tag in index.html.
 function YearCuns (Year){
     this.Year = dateFormat.format(Date.now()).slice(0,4);   
 }
-
-
-
-// creat 10 chioce for year selction and convert to english num
-for( let i =0 ;i<21;i++){
-    let option = document.createElement("option");
+// creat 10 option for year selction and convert to english number.
+// cause persian number i not type of INT is it string type.
+for( let i =0 ;i<=20;i++){
+    const option = document.createElement("option");
     yearChoice.appendChild(option);
-    let english = new YearCuns().Year.replace(/۱۴۰۱/gi , 1401);
+    const english = new YearCuns().Year.replace(/۱۴۰۱/gi , 1401);
     option.setAttribute("value", english-i );
 }
