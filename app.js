@@ -42,3 +42,20 @@ for( let i =0 ;i<=20;i++){
     const english = new YearCuns().Year.replace(/۱۴۰۱/gi , 1401);
     option.setAttribute("value", english-i );
 }
+// creat a constuctor to can genrate all option can choose
+function InsuranceOptimize(year , car , insurance){
+    this.year = year;
+    this.car = car;
+    this.insurance = insurance;
+}
+// creat portotype for consrtructor
+// in this saturation portotype must calculate 
+// and compare between car's
+InsuranceOptimize.prototype.calculateCost = function(InsuranceOptimize){
+// creat variable "cost" for each car 
+    let cost;
+// creat base price 
+    const base = 2000,
+// get value what user choose in list of the car
+    car = InsuranceOptimize.car;
+}
