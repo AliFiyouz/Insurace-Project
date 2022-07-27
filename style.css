@@ -26,9 +26,9 @@ body{
 
 h2{
     font-size: 270%;
-    color: black ;
-    -webkit-text-stroke: 0.3vh;
-    text-transform: uppercase;
+    color: #000000b8 ;
+    background-color: transparent;
+    -webkit-text-stroke: 0.1vh;
 }
 
 #car-choice{
@@ -37,7 +37,7 @@ h2{
     
 }
 
-#year-selction{
+#year-choice{
     width: 15%;
     background-color: transparent;
 }
@@ -87,7 +87,7 @@ h2{
 
 
 .input-car-year  input{
-    width: 10% ;
+    min-height: max-content;
     border-radius: 10%;
     border-bottom: burlywood;
     outline: none;
@@ -95,16 +95,15 @@ h2{
 
 #sub{
     color: #2f333d;
-    font-size: 14vh;
-    background-color: transparent ;
+    font-size: 5vh;
+    background-color: #f53d9c ;
     border: 1px solid #f53d9c27;
-    box-shadow: 10px 10px 5px #f53d9c27,
-    0px 0px 10px #f53d9c27;
+    box-shadow: 5px 5px -5px #f53d9c62,
+    0px 10px -5px #f53d9c27;
     border-radius: 20px;
 }
 
-#sub:hover{
-}
+
 
 .insuranceKind{
     display: flex;

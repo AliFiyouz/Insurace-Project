@@ -6,10 +6,9 @@ let submit = document.querySelector("#sub");
 
 function opt(){    
     let selectedCar = document.querySelector("#car-choice").value; 
-    let selectedYear = document.querySelector("#year-selction").value;
+    let selectedYear = document.querySelector("#year-choice").value;
     let selectedIncurance = document.querySelector("#normal-insurance");
     let selectedIncurance1 = document.querySelector("#complete-insurance");
-
     console.log(selectedCar + "" + selectedYear + "" + selectedIncurance + "" + selectedIncurance1);
 }
 // creat a cunstructor
@@ -26,8 +25,3 @@ for( let i =0 ;i<21;i++){
     let english = new YearCuns().Year.replace(/۱۴۰۱/gi , 1401);
     option.setAttribute("value", english-i );
 }
-
-function CarBasic () {
-    
-}
-

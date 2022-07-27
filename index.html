@@ -13,29 +13,27 @@
         <div class="form">
             <form id="form" action="">
                 <label >مدل خودرو:</label>
-                <input list="car-" name="car-" id="car-choice"/>
-                <datalist id="car-">
+                <select id="car-choice">
                     <option value="پراید">پراید</option>
                     <option value="405">405</option>
                     <option value="2008">2008</option>
                     <option value="BMW 720 LI">BMW 720 LI</option>
-                </datalist>
+                </select>
                 <label for="year-selction">سال ساخت:</label>
-                <input list="year-choice" id="year-selction"/>
-                <datalist id="year-choice"></datalist>
-            </div>
-            <div class="insuranceKind">
-                ساده - شخص ثالث <input type="radio" id="normal-insurance">
-                کامل - شخص ثالث با بیمه بدنه <input type="radio" name="" id="complete-insurance">
-            </div>
-            <div class="result">
+                <select id="year-choice"></select>
+                <label for=""> ساده - شخص ثالث </label>
+                <input type="radio" id="normal-insurance">
+                <label for="">                کامل - شخص ثالث با بیمه بدنه </label>
+                <input type="radio" name="" id="complete-insurance">
                 <input id="sub" onclick="opt()" type="button" value="محاسبه بیمه خودرو شما ">
+            </form>
+        </div>
+            <div class="result">
                 <span id="car-model"></span>
                 <span id="year-made"></span>
                 <span id="insurance-model"></span>
                 <span id="final-price"></span>
-            </form>
-
+            </div>
     <script src="app.js"></script>
 </body>
 </html>
