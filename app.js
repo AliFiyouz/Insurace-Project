@@ -15,7 +15,7 @@ function opt(){
 
 //___________________________________________________________________
 // event listener for when content load.
-document.addEventListener('DOMContentLoaded', yearMaker);
+document.addEventListener('DOMContentLoaded', YearCuns);
 
 // event listener for when submit form clicked.
 form.addEventListener("submit" , function (e) {
@@ -58,4 +58,21 @@ InsuranceOptimize.prototype.calculateCost = function(InsuranceOptimize){
     const base = 2000,
 // get value what user choose in list of the car
     car = InsuranceOptimize.car;
+}
+// calculate diffrence between now and year that user choose
+const year = InsuranceOptimize.year,
+optimizeYear = this.optimizeyear(year),
+iNSurance = InsuranceOptimize.insurance;
+cost = cost - (optimizeYear * 1.5 * cost) / 100;
+cost = this.modelOfInsurance(cost , insurance);
+return cost ;
+
+
+// creat function to check what model of insurance be choosed
+
+InsuranceOptimize.prototype.modelOfInsurance = function (cost , insurance){
+
+    // if kind basic choosed increase price to 15% 
+    // and if the other option choosed increase price to 30%
+    if (insurance ==="")
 }
