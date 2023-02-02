@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,85 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="head"><h2 data-text="h2" >محاسبه آنلاین بیمه خودرو</h2></div>
-        <div class="form">
-            <form id="form">
-                <h2>مدل خودرو:</h2>
-                <select id="car-choice">
-                    <option value="پراید">پراید</option>
-                    <option value="405">405</option>
-                    <option value="2008">2008</option>
-                    <option value="BMW 720 LI">BMW 720 LI</option>
-                </select>
-                <h2>سال ساخت:</h2>
-                <select id="year-choice"></select>
-                <h2> ساده - شخص ثالث </h2>
-                <input type="radio" name="kindInsurance" id="normal-insurance">
-                <h2>کامل - شخص ثالث با بیمه بدنه </h2>
-                <input type="radio" name="kindInsurance" id="complete-insurance">
-                <button type="submit" >محاسبه آنلاین قیمت بیمه خودرو شما</button>
-            </form>
-        </div>
-            <div class="result">
-                <span id="car-model"></span>
-                <span id="year-made"></span>
-                <span id="insurance-model"></span>
-                <span id="final-price"></span>
+
+    <main class="insurancePage">
+
+        <section class="container">
+
+
+            <div class="modal">
+
+                <div class="head">
+
+                    <h2>Calculate Your Car Insurance Price</h2>
+
+
+                </div>
+
+                <div class="body">
+
+                    <form action="">
+
+                        <div class="component">
+                            <select value="">
+                                <option name="" id="">ford mustang</option>
+                                <option name="" id="">mazda rx7</option>
+                                <option name="" id="">nissan r32</option>
+                                <option name="" id="">toyota supra mk7</option>
+                                <option name="" id="">bmw e46</option>
+                                <option name="" id="">rolce royce phantom</option>
+                            </select>
+                        </div>
+
+                        <div class="component">
+                            <select id="carMadeYear" value="">
+                            </select>
+                        </div>
+                        <div class="checkBox">
+                            <div>
+                                <span>Select Your Insurance Type</span>
+                            </div>
+                            <div>
+                                <label for="">basic - thirth person</label>
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div>
+                                <label for="">complete - thirth person with body insurance </label>
+                                <input type="checkbox" name="" id="">
+                            </div>
+
+                        </div>
+                        
+                        <div class="callToAction">
+                            <input id="submitForm" type="submit" value="Calculate Price">
+                        </div>
+                    </form>
+
+                </div>
+
+
+
             </div>
+
+
+        </section>
+
+        <section class="paymentResault">
+
+
+
+
+
+        </section>
+
+
+    </main>
+
+
+
     <script src="app.js"></script>
 </body>
+
 </html>
