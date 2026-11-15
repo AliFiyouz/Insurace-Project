@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Car Insurance Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,13 +30,13 @@
                     <form action="">
 
                         <div class="component">
-                            <select value="">
-                                <option name="" id="">ford mustang</option>
-                                <option name="" id="">mazda rx7</option>
-                                <option name="" id="">nissan r32</option>
-                                <option name="" id="">toyota supra mk7</option>
-                                <option name="" id="">bmw e46</option>
-                                <option name="" id="">rolce royce phantom</option>
+                            <select id="carModel">
+                                <option value="ford mustang">ford mustang</option>
+                                <option value="mazda rx7">mazda rx7</option>
+                                <option value="nissan r32">nissan r32</option>
+                                <option value="toyota supra mk7">toyota supra mk7</option>
+                                <option value="bmw e46">bmw e46</option>
+                                <option value="rolls royce phantom">rolls royce phantom</option>
                             </select>
                         </div>
 
@@ -49,12 +49,12 @@
                                 <span>Select Your Insurance Type</span>
                             </div>
                             <div>
-                                <label for="">basic - thirth person</label>
-                                <input type="checkbox" name="" id="">
+                                <label for="basic">basic - third person</label>
+                                <input type="checkbox" name="insuranceType" id="basic">
                             </div>
                             <div>
-                                <label for="">complete - thirth person with body insurance </label>
-                                <input type="checkbox" name="" id="">
+                                <label for="complete">complete - third person with body insurance</label>
+                                <input type="checkbox" name="insuranceType" id="complete">
                             </div>
 
                         </div>
